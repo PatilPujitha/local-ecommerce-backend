@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>E-commerce App</title>
+</head>
+<body>
+  <h1>E-commerce App</h1>
+  <script>
+    window.api.send('message', 'Hello from renderer');
+
+    window.api.receive('message', (data) => {
+      console.log(`Received: ${data}`);
+    });
+  </script>
+</body>
+</html>
